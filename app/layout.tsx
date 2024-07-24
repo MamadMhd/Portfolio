@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +17,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="flex min-h-screen flex-col items-center justify-between py-24">
+          <div className="z-10 w-full max-w-8xl items-center justify-between text-sm lg:flex backdrop-blur-md bg-white/30 p-4 rounded-xl">
+            <Image
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+              src="/logo.svg"
+              alt="Next.js Logo"
+              width={120}
+              height={20}
+              priority
+            />
+            <ul className="flex gap-2 text-lg text-white font-vazirmatn h-full">
+              <li className="cursor-pointer px-2 pb-1 rounded">
+                ارتباط با من
+              </li>
+              <li className="cursor-pointer px-2 pb-1 rounded">
+                سوابق شغلی
+              </li>
+              <li className="cursor-pointer px-2 pb-1 rounded">
+                پروژه ها
+              </li>
+              <li className="cursor-pointer px-2 pb-1 rounded">
+                خانه
+              </li>
+            </ul>
+          </div>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
