@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function ContactMe() {
   return (
-    <div className="w-full max-w-8xl h-full flex justify-between bg-form-background rounded-3xl">
+    <div className="w-full max-w-8xl h-full flex justify-between  rounded-3xl">
       <div className="w-full h-full flex justify-between backdrop-filter backdrop-blur-sm bg-black/20 rounded-3xl">
         <div className="basis-1/2 m-6 ml-0 pl-6">
           <form className="flex flex-col gap-5 h-full">
@@ -12,25 +12,29 @@ function ContactMe() {
                 name="name"
                 type="text"
                 placeholder="نام"
-                className="basis-1/2 text-xl font-vazirmatn rounded-lg p-2 border-2 border-gray-500"
+                className="basis-1/2 text-xl font-vazirmatn rounded-lg p-3 border-2 border-gray-500"
+                required
               />
               <input
                 name="lastName"
                 type="text"
                 placeholder="نام خانوادگی"
-                className=" basis-1/2 text-xl font-vazirmatn rounded-lg p-2 border-2 border-gray-500"
+                className=" basis-1/2 text-xl font-vazirmatn rounded-lg p-3 border-2 border-gray-500"
+                required
               />
             </div>
             <input
               name="email"
               type="email"
               placeholder="ایمیل"
-              className="text-xl font-vazirmatn rounded-lg p-2 border-2 border-gray-500"
+              className="text-xl font-vazirmatn rounded-lg p-3 border-2 border-gray-500"
+              required
             />
             <input
               type="text"
               placeholder="شماره تماس"
-              className="text-xl font-vazirmatn rounded-lg p-2 border-2 border-gray-500"
+              className="text-xl font-vazirmatn rounded-lg p-3 border-2 border-gray-500"
+              required
             />
             <label
               htmlFor=""
@@ -39,8 +43,9 @@ function ContactMe() {
               متن پیام
             </label>
             <textarea
-              className="text-xl font-vazirmatn rounded-lg p-2 w-full h-full border-2 border-gray-500"
+              className="text-xl font-vazirmatn rounded-lg p-3 w-full h-full border-2 border-gray-500"
               placeholder="پیام شما ..."
+              required
             />
             <button
               type="submit"
@@ -54,8 +59,8 @@ function ContactMe() {
           <Image
             src="/formBanner.svg"
             className="m-auto"
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             alt="Form Banner"
           />
         </div>
