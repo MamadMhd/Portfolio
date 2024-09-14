@@ -11,7 +11,6 @@ function ContactMe() {
     phoneNumber: "",
     message: "",
   });
-  const [errors, setErrors] = useState([]);
 
   const handleChange = (e: any) => {
     setContactData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -28,8 +27,6 @@ function ContactMe() {
     });
     const { msg, success } = await response.json();
     if (success) {
-      console.log('ddddddddddddddd');
-      
       toast.success(msg[0]);
       setContactData({
         name: "",
@@ -39,7 +36,6 @@ function ContactMe() {
         message: "",
       });
     } else {
-      console.log('ddddddddddddddd');
       msg.map((error: string) => toast.error(error));
     }
   };
