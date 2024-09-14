@@ -1,4 +1,5 @@
 import { Project } from "@/app/projects/type"
+import { WorkExprerience } from "@/app/workExperience/types"
 
 export type ProjectsListProps = {
     projects?: Array<Project> | null,
@@ -8,4 +9,8 @@ export type ProjectsListProps = {
 
 export type ProjectCardProps = {
     curentProject: Project | null
+}
+
+export type CompanyCardProps = {
+    data: WorkExprerience
 }

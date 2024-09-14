@@ -9,7 +9,7 @@ function ProjectsList({
   handleChange,
 }: ProjectsListProps) {
   return (
-    <div className="flex flex-col gap-4 font-vazirmatn text-xl">
+    <div className="flex flex-col gap-4 font-vazirmatn lg:text-xl">
       {projects?.map((project) => {
         return (
           <div
@@ -17,9 +17,9 @@ function ProjectsList({
             onClick={() => handleChange(project.id)}
             className={`${
               styles["forwardArrow"]
-            } flex justify-between items-center p-4 border-r-2  border-gray-400 ${
+            } flex justify-between items-center p-4 border-r-4  border-gray-400 ${
               curentProject === project ? "bg-white/10" : "hover:bg-white/10"
-            } rounded-l-lg`}
+            } rounded-l-lg rounded-r-md shadow-xl `}
           >
             <span>{project.name}</span>
             <span className={`${styles["icon"]}`}>

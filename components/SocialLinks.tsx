@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 function SocialLinks() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="fixed bottom-10 left-10">
+    <div className="fixed bottom-10 left-10 cursor-pointer">
       <div className={`flex flex-col justify-center items-center gap-4 mb-4`}>
         <a
           className={`flex justify-center items-center rounded-full bg-[#ff3e30] w-16 h-16 border border-blue-950 hover:shadow-lg hover:shadow-[#ff3e30] ${
