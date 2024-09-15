@@ -13,7 +13,7 @@ function SocialLinks() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div className="fixed bottom-10 left-10 cursor-pointer">
-      {isOpen && <div className={`flex flex-col justify-center items-center gap-4 mb-4`}>
+      <div className={`flex flex-col justify-center items-center gap-4 mb-4`}>
         <a
           className={`flex justify-center items-center rounded-full bg-[#ff3e30] w-16 h-16 border border-blue-950 hover:shadow-lg hover:shadow-[#ff3e30] ${
             isOpen ? styles["slide-up"] : styles["slide-down"]
@@ -41,9 +41,9 @@ function SocialLinks() {
         >
           <IoLogoLinkedin size={25} color="white" />
         </a>
-      </div>}
+      </div>
       <div
-        className="flex justify-center items-center rounded-full bg-blue-700 w-16 h-16 border border-blue-950"
+        className={`flex justify-center items-center rounded-full bg-blue-700 w-16 h-16 border border-blue-950`}
         onClick={() => setIsOpen((prev) => !prev)}
       >
         {isOpen ? (
