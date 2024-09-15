@@ -40,8 +40,8 @@ function ContactMe() {
     }
   };
   return (
-    <div className="w-full lg:max-w-8xl h-full flex justify-between  rounded-3xl px-10 lg:px-20 -z-10">
-      <div className="w-full h-full lg:flex justify-between backdrop-filter backdrop-blur-sm bg-black/20 rounded-3xl">
+    <div className="w-full lg:max-w-8xl h-full flex justify-between rounded-3xl px-10 lg:px-20">
+      <div className="w-full h-full lg:flex justify-between filter backdrop-filter backdrop-blur-sm bg-black/20 rounded-3xl">
         <div className="lg:basis-1/2 md:m-12 m-6 lg:ml-0 lg:pl-6">
           <form className="flex flex-col text-black gap-5 h-full" onSubmit={handleSubmit}>
             <div className="flex md:flex-row flex-col justify-between gap-2">
