@@ -23,7 +23,7 @@ const data: Array<WorkExprerience> = [
 ]
 function WorkExperience() {
   return (
-    <div className='grid lg:grid-cols-2 gap-4 w-full min-w-7xl h-full lg:px-20 px-10'>
+    <div className='grid lg:grid-cols-2 gap-4 w-full min-w-7xl h-full'>
       {
         data.map((item, index)=> {
           return(

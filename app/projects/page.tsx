@@ -41,7 +41,7 @@ function Projects() {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col w-full max-w-8xl h-full gap-4 text-white lg:px-20 px-10">
+    <div className="flex lg:flex-row flex-col w-full h-full gap-4 text-white">
       <div className="basis-1/4 w-full h-full">
         <ProjectsList
           projects={projects}

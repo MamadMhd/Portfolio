@@ -20,6 +20,17 @@ const config: Config = {
       maxWidth: {
         '8xl': "100rem",
       },
+      boxShadow: {
+        customShadow1: "0 0 15px -1px rgb(0 0 0 / 0.2)",
+        customShadow2: "0 15px 15px -1px rgb(0 0 0 / 0.4)",
+      },
+      container: {
+        center: true,
+        padding: "2rem",
+      },
+      screens: {
+        450: "450px"
+      }
     },
   },
   plugins: [],

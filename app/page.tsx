@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row-reverse max-w-8xl w-full h-full justify-between select-none px-10 lg:px-20">
+    <div className="flex flex-col lg:flex-row-reverse w-full h-full justify-between select-none">
       <div className="basis-1/3 flex flex-col justify-center w-full">
         <Image
           src="/profile.png"

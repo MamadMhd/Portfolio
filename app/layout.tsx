@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SocialLinks from "@/components/SocialLinks";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Menu from "@/components/Menu";
 
@@ -21,13 +21,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={inter.className}>
-        <main className="flex min-h-screen min-w-screen w-full flex-col items-center gap-10 py-10">
-          <Menu />
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={"container font-vazirmatn"}>
+        <Menu />
+        <main className="my-5 md:my-7 lg:my-10">
           {children}
           <SocialLinks />
         </main>
-        <ToastContainer rtl={true} position="top-left" className={'font-vazirmatn'} />
+        <ToastContainer
+          rtl={true}
+          position="top-left"
+          className={"font-vazirmatn"}
+        />
       </body>
     </html>
   );
