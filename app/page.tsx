@@ -75,7 +75,7 @@ export default function Home() {
           <div className="flex flex-col font-vazirmatn border-r-4 px-2">
               <p className="text-lg">مهندسی کامپیوتر | نرم افزار</p>
               <p className="text-lg">دانشگاه هرمزگان</p>
-              <p className="text-lg">1389 - 1403</p>
+              <p className="text-lg">1398 - 1403</p>
           </div>
         </div>
       </div>

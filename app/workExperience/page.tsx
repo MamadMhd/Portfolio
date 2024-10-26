@@ -14,7 +14,7 @@ const data: Array<WorkExprerience> = [
   },
   {
     position: "برنامه نویس Net. و DevExpress",
-    company: "شرکت پرسیا سیتم",
+    company: "شرکت پرسیا سیستم",
     province: "فارس",
     city: "شیراز",
     start: "تیر 1402",
